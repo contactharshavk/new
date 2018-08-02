@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.mindtree.practice.trainingprog.dao.EmployeeDataProcessTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 22.359 s - in org.mindtree.practice.trainingprog.dao.EmployeeDataProcessTest
