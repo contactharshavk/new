@@ -1,32 +1,27 @@
-/*package org.mindtree.practice.trainingprog.dto;
+package org.mindtree.practice.trainingprog.dto;
+
+import java.util.List;
 
 public class CricketBeanMain {
-
-	private boolean matchStarted;
-	private String team1;
-	private String team2;
+	
+	private List<CricketSquadeBean> squade;
+	private boolean cache;
 	private int ttl;
 	private int v;
 	private CricketInfoProvider provider;
 	private int creditsLeft;
 	
-	public boolean isMatchStarted() {
-		return matchStarted;
+	public List<CricketSquadeBean> getSquade() {
+		return squade;
 	}
-	public void setMatchStarted(boolean matchStarted) {
-		this.matchStarted = matchStarted;
+	public void setSquade(List<CricketSquadeBean> squade) {
+		this.squade = squade;
 	}
-	public String getTeam1() {
-		return team1;
+	public boolean isCache() {
+		return cache;
 	}
-	public void setTeam1(String team1) {
-		this.team1 = team1;
-	}
-	public String getTeam2() {
-		return team2;
-	}
-	public void setTeam2(String team2) {
-		this.team2 = team2;
+	public void setCache(boolean cache) {
+		this.cache = cache;
 	}
 	public int getTtl() {
 		return ttl;
@@ -53,4 +48,3 @@ public class CricketBeanMain {
 		this.creditsLeft = creditsLeft;
 	}
 }
-*/

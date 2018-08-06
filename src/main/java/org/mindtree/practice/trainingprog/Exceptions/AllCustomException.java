@@ -20,21 +20,21 @@ public class AllCustomException extends ResponseEntityExceptionHandler {
 		return new ResponseEntity<ErrorDetails>(new ErrorDetails(exception.getMessage()), HttpStatus.BAD_REQUEST);
 	}
 
-	@ExceptionHandler(IdInvalidException.class)
-	public ResponseEntity<ErrorDetails> handleIdInvalidException(IdInvalidException exception, WebRequest request){
-		return new ResponseEntity<ErrorDetails>(new ErrorDetails(exception.getMessage()), HttpStatus.BAD_REQUEST);
-	}
-
 	@ExceptionHandler(IdNotFoundException.class)
 	public ResponseEntity<ErrorDetails> handleIdNotFoundException(IdNotFoundException exception, WebRequest request){
 		System.out.println("handleIdNotFoundException sysout is ");
 		return new ResponseEntity<ErrorDetails>(new ErrorDetails(exception.getMessage()), HttpStatus.BAD_REQUEST);
 	}
-
-	@ExceptionHandler(NumberFormatException.class)
-	public ResponseEntity<ErrorDetails> handleNumberFormatException(OtherException exception, WebRequest request){
-		return new ResponseEntity<ErrorDetails>(new ErrorDetails(exception.getMessage()), HttpStatus.INTERNAL_SERVER_ERROR);
-	}
+	
+//	@ExceptionHandler(IdInvalidException.class)
+//	public ResponseEntity<ErrorDetails> handleIdInvalidException(IdInvalidException exception, WebRequest request){
+//		return new ResponseEntity<ErrorDetails>(new ErrorDetails(exception.getMessage()), HttpStatus.BAD_REQUEST);
+//	}
+//
+//	@ExceptionHandler(NumberFormatException.class)
+//	public ResponseEntity<ErrorDetails> handleNumberFormatException(OtherException exception, WebRequest request){
+//		return new ResponseEntity<ErrorDetails>(new ErrorDetails(exception.getMessage()), HttpStatus.INTERNAL_SERVER_ERROR);
+//	}
 
 	@ExceptionHandler(OtherException.class)
 	public ResponseEntity<ErrorDetails> handleException(OtherException exception, WebRequest request){

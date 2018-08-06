@@ -14,5 +14,4 @@ import org.springframework.test.context.web.WebAppConfiguration;
 public abstract class ApplicationTest {
 	
 	protected Logger logger = LoggerFactory.getLogger(this.getClass());
-	
 }

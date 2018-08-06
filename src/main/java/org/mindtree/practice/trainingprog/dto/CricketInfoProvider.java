@@ -1,4 +1,4 @@
-/*package org.mindtree.practice.trainingprog.dto;
+package org.mindtree.practice.trainingprog.dto;
 
 public class CricketInfoProvider {
 	
@@ -25,4 +25,3 @@ public class CricketInfoProvider {
 		this.pubDate = pubDate;
 	}
 }
-*/

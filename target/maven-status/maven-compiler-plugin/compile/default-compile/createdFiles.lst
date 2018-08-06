@@ -6,7 +6,6 @@ org\mindtree\practice\trainingprog\ApplicationMindtreeEmployee.class
 org\mindtree\practice\trainingprog\Exceptions\IdAlreadyPresentException.class
 org\mindtree\practice\trainingprog\Exceptions\ErrorDetails.class
 org\mindtree\practice\trainingprog\dto\EmployeeStatusMessage.class
-org\mindtree\practice\trainingprog\Exceptions\IdInvalidException.class
 org\mindtree\practice\trainingprog\Exceptions\AllCustomException.class
 org\mindtree\practice\trainingprog\Repository\EmployeeRepository.class
 org\mindtree\practice\trainingprog\Exceptions\IdNotFoundException.class

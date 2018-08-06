@@ -48,7 +48,7 @@ public class EmployeeController {
 	@ApiOperation(value="Adding an Employee", response=EmployeeStatusMessage.class)
 	@RequestMapping(value="/EmpMgt/addEmp", method=RequestMethod.POST, consumes=MediaType.APPLICATION_JSON_VALUE )
 //	@CachePut(value="employee", key="#result.id")
-	public ResponseEntity<EmployeeStatusMessage> createEmployee(@RequestBody EmployeeBean emp) throws IdAlreadyPresentException {
+	public ResponseEntity<EmployeeStatusMessage> createEmployee(@RequestBody EmployeeBean emp) throws Exception {
 		emp = employeeDataProcess.createEmployee(emp);
 		employeeStatusMessage = new EmployeeStatusMessage("Specified Id created successfully");
 		empList = new ArrayList<EmployeeBean>();
@@ -60,9 +60,9 @@ public class EmployeeController {
 	@ApiOperation(value="Getting an Employee", response=EmployeeStatusMessage.class)
 	@RequestMapping(value="/EmpMgt/getEmp/{id}", method=RequestMethod.GET, produces=MediaType.APPLICATION_JSON_VALUE)
 //	@Cacheable(value="employee", key="#id")
-	public ResponseEntity<EmployeeStatusMessage> getEmployee(@PathVariable ("id") String id) throws NumberFormatException, IdNotFoundException {
+	public ResponseEntity<EmployeeStatusMessage> getEmployee(@PathVariable ("id") String id) throws Exception {
 		emp = employeeDataProcess.getEmp(id);;
-		System.out.println("inside getEmp method in controller");
+//		System.out.println("inside getEmp method in controller");
 		employeeStatusMessage = new EmployeeStatusMessage("Specified Employee Retrieved successfully");
 		empList = new ArrayList<EmployeeBean>();
 		empList.add(emp);
@@ -73,9 +73,9 @@ public class EmployeeController {
 	@ApiOperation(value="Getting all Employees", response=EmployeeStatusMessage.class)
 	@RequestMapping(value="/EmpMgt/getEmp/getAllEmpDetails", method=RequestMethod.GET, produces=MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<EmployeeStatusMessage> getAllEmployees() {
-		System.out.println("inside getAllEmployee method in controller");
+//		System.out.println("inside getAllEmployee method in controller");
 		empList = employeeDataProcess.getAllEmployee();
-		System.out.println("inside controller get All emp next line");
+//		System.out.println("inside controller get All emp next line");
 		employeeStatusMessage = new EmployeeStatusMessage("Specified Employees Retrieved successfully");
 		employeeStatusMessage.setEmployeeBeanList(empList);
 		return new ResponseEntity<EmployeeStatusMessage>(employeeStatusMessage, HttpStatus.OK);
@@ -94,7 +94,7 @@ public class EmployeeController {
 	
 	@ApiOperation(value="Deleting an Employees", response=EmployeeStatusMessage.class)
 	@RequestMapping(value="/EmpMgt/deleteEmp/{id}", method=RequestMethod.DELETE, produces=MediaType.APPLICATION_JSON_VALUE)
-	public ResponseEntity<EmployeeStatusMessage> deleteEmployee(@PathVariable ("id") String id) throws NumberFormatException, IdNotFoundException {
+	public ResponseEntity<EmployeeStatusMessage> deleteEmployee(@PathVariable ("id") String id) throws Exception {
 		emp = employeeDataProcess.deleteEmployee(id);
 		employeeStatusMessage = new EmployeeStatusMessage("Specified Employee Deleted successfully");
 		empList = new ArrayList<EmployeeBean>();

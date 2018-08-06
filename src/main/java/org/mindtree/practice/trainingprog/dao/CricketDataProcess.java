@@ -1,4 +1,4 @@
-/*package org.mindtree.practice.trainingprog.dao;
+package org.mindtree.practice.trainingprog.dao;
 
 import org.mindtree.practice.trainingprog.Repository.CricketRepository;
 import org.mindtree.practice.trainingprog.dto.CricketBeanMain;
@@ -14,4 +14,3 @@ public class CricketDataProcess {
 	}
 	
 }
-*/
