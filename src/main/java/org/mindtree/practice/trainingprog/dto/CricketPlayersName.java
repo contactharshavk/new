@@ -1,19 +1,19 @@
 package org.mindtree.practice.trainingprog.dto;
 
-class CricketPleayersName {
+class CricketPlayersName {
 	
-	private int pid;
+	private long pid;
 	private String name;
 	
-	public CricketPleayersName() {
+	public CricketPlayersName() {
 		super();
 	}
 
-	public int getPid() {
+	public long getPid() {
 		return pid;
 	}
 
-	public void setPid(int pid) {
+	public void setPid(long pid) {
 		this.pid = pid;
 	}
 

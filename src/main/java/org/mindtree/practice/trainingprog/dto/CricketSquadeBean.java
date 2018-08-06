@@ -4,14 +4,14 @@ import java.util.List;
 
 public class CricketSquadeBean {
 	
-	private List<CricketPleayersName> pleayers;
+	private List<CricketPlayersName> players;
 	private String name;
 	
-	public List<CricketPleayersName> getPleayers() {
-		return pleayers;
+	public List<CricketPlayersName> getPlayers() {
+		return players;
 	}
-	public void setPleayers(List<CricketPleayersName> pleayers) {
-		this.pleayers = pleayers;
+	public void setPlayers(List<CricketPlayersName> players) {
+		this.players = players;
 	}
 	public String getName() {
 		return name;

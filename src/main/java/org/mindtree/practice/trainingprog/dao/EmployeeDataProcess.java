@@ -66,7 +66,7 @@ public class EmployeeDataProcess {
 			emp = employeeRepository.findById(id).get();
 		} catch(NoSuchElementException | NullPointerException e){
 //			System.out.println("after exception");
-			e.printStackTrace();
+//			e.printStackTrace();
 			throw new IdNotFoundException("Specified Id " + id + " Not Present");
 		} 
 //		System.out.println("just before delete");

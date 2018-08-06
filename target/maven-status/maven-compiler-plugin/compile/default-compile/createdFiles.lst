@@ -1,9 +1,13 @@
+org\mindtree\practice\trainingprog\dto\CricketSquadeBean.class
 org\mindtree\practice\trainingprog\SwaggerConfig.class
 org\mindtree\practice\trainingprog\controller\EmployeeController.class
 org\mindtree\practice\trainingprog\dto\EmployeeBean.class
 org\mindtree\practice\trainingprog\dao\EmployeeDataProcess.class
+org\mindtree\practice\trainingprog\dto\CricketBeanMain.class
 org\mindtree\practice\trainingprog\ApplicationMindtreeEmployee.class
+org\mindtree\practice\trainingprog\controller\CricketApiController.class
 org\mindtree\practice\trainingprog\Exceptions\IdAlreadyPresentException.class
+org\mindtree\practice\trainingprog\dto\CricketInfoProvider.class
 org\mindtree\practice\trainingprog\Exceptions\ErrorDetails.class
 org\mindtree\practice\trainingprog\dto\EmployeeStatusMessage.class
 org\mindtree\practice\trainingprog\Exceptions\AllCustomException.class

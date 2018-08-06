@@ -38,7 +38,7 @@ public class EmployeeDataServiceTest {
 
 	@Test
 	public void testCreateEmployeeDataProcess() throws Exception {
-		EmployeeBean employee = new EmployeeBean("1234", "user5", "abcd");
+		EmployeeBean employee = new EmployeeBean("4", "user5", "abcd");
 		EmployeeBean createdEmployee = employeeDataProcess.createEmployee(employee);
 		Assert.assertNotNull("failure Expected not null", createdEmployee);
 		Assert.assertNotNull("expected ID not null", createdEmployee.getId());
@@ -54,7 +54,7 @@ public class EmployeeDataServiceTest {
 
 	@Test
 	public void testCreateEmployeeDataProcessNegativeScenarion() throws Exception {
-		EmployeeBean employee = new EmployeeBean("1.00", "user5", "abcd");
+		EmployeeBean employee = new EmployeeBean("4", "user5updateNS", "abcdupdateNS");
 		try {
 			EmployeeBean createdEmployee = employeeDataProcess.createEmployee(employee);
 		}catch (IdAlreadyPresentException exception) {
@@ -67,7 +67,7 @@ public class EmployeeDataServiceTest {
 		List<EmployeeBean> employeeList = employeeDataProcess.getAllEmployee();
 		System.out.println(employeeList.size() + "list");
 		Assert.assertNotNull("failure Expected not null", employeeList);
-		Assert.assertEquals("failure - Expected Size ", 11, employeeList.size());
+		Assert.assertEquals("failure - Expected Size ", 3, employeeList.size());
 	}
 
 	@Test
@@ -90,15 +90,15 @@ public class EmployeeDataServiceTest {
 	public void testUpdateEmployeeDataProcess() throws Exception{
 		EmployeeBean newEmployee = new EmployeeBean("1.00", "ranga1updated", "abcdupdated");
 		EmployeeBean newEmployee1 = new EmployeeBean("1.00", "ranga1updated", "abcdupdated");
-		EmployeeBean employee = employeeDataProcess.updateEmployee("1.00", newEmployee);
+		EmployeeBean employee = employeeDataProcess.updateEmployee("1", newEmployee);
 		System.out.println(employee.getId() + " " + employee.getUserName() + " " + employee.getPassword() + "update test case");
 		Assert.assertEquals(newEmployee, employee);
 	}
 
 	@Test
 	public void testDeleteEmployeeDataProcess() throws Exception{
-		EmployeeBean newEmployee = new EmployeeBean("2.00", "ranga4", "abcd");
-		EmployeeBean employee = employeeDataProcess.deleteEmployee("2.00");
+		EmployeeBean newEmployee = new EmployeeBean("3", "RANGA3", "password");
+		EmployeeBean employee = employeeDataProcess.deleteEmployee("3");
 		Assert.assertNotSame(newEmployee, employee);
 		System.out.println(employee.getId() + " " + employee.getUserName() + " " + employee.getPassword() + "delete test case");
 		Assert.assertEquals(newEmployee, employee);		

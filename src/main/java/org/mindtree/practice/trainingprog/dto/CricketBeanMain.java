@@ -4,18 +4,18 @@ import java.util.List;
 
 public class CricketBeanMain {
 	
-	private List<CricketSquadeBean> squade;
+	private List<CricketSquadeBean> squad;
 	private boolean cache;
 	private int ttl;
 	private int v;
 	private CricketInfoProvider provider;
 	private int creditsLeft;
 	
-	public List<CricketSquadeBean> getSquade() {
-		return squade;
+	public List<CricketSquadeBean> getSquad() {
+		return squad;
 	}
-	public void setSquade(List<CricketSquadeBean> squade) {
-		this.squade = squade;
+	public void setSquade(List<CricketSquadeBean> squad) {
+		this.squad = squad;
 	}
 	public boolean isCache() {
 		return cache;
