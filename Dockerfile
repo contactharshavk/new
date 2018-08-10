@@ -12,7 +12,7 @@ EXPOSE 9000
 ARG JAR_FILE=target/trainingprog-1.0.1-SNAPSHOT.jar
 
 # Add the application's jar to the container  
-COPY trainingprog-1.0.1-SNAPSHOT.jar .
+COPY target/trainingprog-1.0.1-SNAPSHOT.jar /var/lib/docker/tmp/
 
 # Run the jar file  
-ENTRYPOINT ["java","-Djava.security.egd=_file:/dev/./urandom","-jar","trainingprog-1.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java","-Djava.security.egd=_file:/dev/./urandom","-jar","/var/lib/docker/tmp/trainingprog-1.0.1-SNAPSHOT.jar"]
