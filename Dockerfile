@@ -9,10 +9,10 @@ VOLUME /tmp
 EXPOSE 9000
 
 # The application's jar file
-ARG JAR_FILE=target/trainingprog.jar
+ARG JAR_FILE=target/trainingprog-1.0.1-SNAPSHOT.jar
 
 # Add the application's jar to the container  
-COPY employee_management.jar /var/lib/docker/tmp/
+COPY trainingprog-1.0.1-SNAPSHOT.jar /var/lib/docker/tmp/
 
 # Run the jar file  
-ENTRYPOINT ["java","-Djava.security.egd=_file:/dev/./urandom","-jar","/var/lib/docker/tmp/trainingprog.jar"]
+ENTRYPOINT ["java","-Djava.security.egd=_file:/dev/./urandom","-jar","/var/lib/docker/tmp/trainingprog-1.0.1-SNAPSHOT.jar"]
