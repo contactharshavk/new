@@ -1,6 +1,7 @@
 C:\Users\Administrator\eclipse-workspace\trainingprog\src\main\java\org\mindtree\practice\trainingprog\dto\CricketInfoProvider.java
 C:\Users\Administrator\eclipse-workspace\trainingprog\src\main\java\org\mindtree\practice\trainingprog\dto\EmployeeBean.java
 C:\Users\Administrator\eclipse-workspace\trainingprog\src\main\java\org\mindtree\practice\trainingprog\Exceptions\OtherException.java
+C:\Users\Administrator\eclipse-workspace\trainingprog\src\main\java\org\mindtree\practice\trainingprog\dto\CricketPlayersName.java
 C:\Users\Administrator\eclipse-workspace\trainingprog\src\main\java\org\mindtree\practice\trainingprog\Repository\CricketRepository.java
 C:\Users\Administrator\eclipse-workspace\trainingprog\src\main\java\org\mindtree\practice\trainingprog\controller\EmployeeController.java
 C:\Users\Administrator\eclipse-workspace\trainingprog\src\main\java\org\mindtree\practice\trainingprog\dto\CricketBeanMain.java
@@ -11,7 +12,6 @@ C:\Users\Administrator\eclipse-workspace\trainingprog\src\main\java\org\mindtree
 C:\Users\Administrator\eclipse-workspace\trainingprog\src\main\java\org\mindtree\practice\trainingprog\Repository\EmployeeRepository.java
 C:\Users\Administrator\eclipse-workspace\trainingprog\src\main\java\org\mindtree\practice\trainingprog\dao\CricketDataProcess.java
 C:\Users\Administrator\eclipse-workspace\trainingprog\src\main\java\org\mindtree\practice\trainingprog\dao\EmployeeDataProcess.java
-C:\Users\Administrator\eclipse-workspace\trainingprog\src\main\java\org\mindtree\practice\trainingprog\dto\CricketPleayersName.java
 C:\Users\Administrator\eclipse-workspace\trainingprog\src\main\java\org\mindtree\practice\trainingprog\Exceptions\IdNotFoundException.java
 C:\Users\Administrator\eclipse-workspace\trainingprog\src\main\java\org\mindtree\practice\trainingprog\SwaggerConfig.java
 C:\Users\Administrator\eclipse-workspace\trainingprog\src\main\java\org\mindtree\practice\trainingprog\Exceptions\IdAlreadyPresentException.java

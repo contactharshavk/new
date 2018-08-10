@@ -13,4 +13,5 @@ org\mindtree\practice\trainingprog\dto\EmployeeStatusMessage.class
 org\mindtree\practice\trainingprog\Exceptions\AllCustomException.class
 org\mindtree\practice\trainingprog\Repository\EmployeeRepository.class
 org\mindtree\practice\trainingprog\Exceptions\IdNotFoundException.class
+org\mindtree\practice\trainingprog\dto\CricketPlayersName.class
 org\mindtree\practice\trainingprog\Exceptions\OtherException.class
